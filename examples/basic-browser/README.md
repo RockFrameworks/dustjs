@@ -9,3 +9,7 @@ To (re)compile templates:
 Then load `index.html` in your browser.
 
 This example shows how to simply load Dust using script tags. Templates are stored in the **views** directory and are then compiled to a single script file that is included on the page.
+
+
+in branch 'develop':
+added the normal use of dust 

@@ -1,22 +1,26 @@
 var json = {
-  "languages": [
-    {
-      "name": "HTML",
-      "creators": ["Tim Berners Lee"]
-    },
-    {
-      "name": "CSS",
-      "creators": ["Håkon Wium Lie", "Bert Bos"]
-    },
-    {
-      "name": "JavaScript",
-      "creators": ["Brendan Eich"]
-    },
-    {
-      "name": "Dust",
-      "creators": ["akdubya"]
-    }
-  ]
+	"level" : "master",
+	"age" : 27,
+	"starfighterRentalAge" : 25,
+	"level" : "padawan",
+
+	"bilbosAge" : 50,
+	"gandalfsAge" : 12345,
+
+	"guests" : ["Alice", "Bob", "Charlie"],
+
+	"testEnabled" : "bunnies",
+
+	"flavors": [
+	    { "name": "red bean" },
+	    { "name": "green tea" },
+	    { "name": "mango" },
+	    { "name": "peanut" }
+	],
+	
+	"progress": 70,
+	
+	
 };
 dust.render("views/hello", json, function(err, out) {
 	if (err)
