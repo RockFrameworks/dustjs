@@ -1,0 +1,5 @@
+<ul>
+  {#languages}<li>{$idx}-{.}-{$len} [[ YOUR CODE GOES HERE ]]</li>{/languages}
+</ul>
+
+{! {>"views/version"/} !}

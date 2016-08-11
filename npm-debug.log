@@ -1,0 +1,97 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   '--production',
+1 verbose cli   'dustjs-linkedin' ]
+2 info using npm@3.3.12
+3 info using node@v5.2.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData dustjs-linkedin
+8 silly fetchNamedPackageData dustjs-linkedin
+9 silly mapToRegistry name dustjs-linkedin
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry uri https://registry.npmjs.org/dustjs-linkedin
+13 verbose request uri https://registry.npmjs.org/dustjs-linkedin
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 11:42:01 AM
+16 verbose request using bearer token for auth
+17 verbose request id 44577c18736e390c
+18 http request GET https://registry.npmjs.org/dustjs-linkedin
+19 http 200 https://registry.npmjs.org/dustjs-linkedin
+20 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+20 verbose headers   etag: '"AHYJGA0KJIN4IC7SPG073MIYD"',
+20 verbose headers   'content-type': 'application/json',
+20 verbose headers   'content-encoding': 'gzip',
+20 verbose headers   'cache-control': 'max-age=300',
+20 verbose headers   'transfer-encoding': 'chunked',
+20 verbose headers   'accept-ranges': 'bytes',
+20 verbose headers   date: 'Thu, 11 Aug 2016 03:42:10 GMT',
+20 verbose headers   via: '1.1 varnish',
+20 verbose headers   connection: 'keep-alive',
+20 verbose headers   'x-served-by': 'cache-fra1243-FRA',
+20 verbose headers   'x-cache': 'MISS',
+20 verbose headers   'x-cache-hits': '0',
+20 verbose headers   'x-timer': 'S1470886930.703749,VS0,VE130',
+20 verbose headers   vary: 'Accept-Encoding' }
+21 silly get cb [ 200,
+21 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+21 silly get     etag: '"AHYJGA0KJIN4IC7SPG073MIYD"',
+21 silly get     'content-type': 'application/json',
+21 silly get     'content-encoding': 'gzip',
+21 silly get     'cache-control': 'max-age=300',
+21 silly get     'transfer-encoding': 'chunked',
+21 silly get     'accept-ranges': 'bytes',
+21 silly get     date: 'Thu, 11 Aug 2016 03:42:10 GMT',
+21 silly get     via: '1.1 varnish',
+21 silly get     connection: 'keep-alive',
+21 silly get     'x-served-by': 'cache-fra1243-FRA',
+21 silly get     'x-cache': 'MISS',
+21 silly get     'x-cache-hits': '0',
+21 silly get     'x-timer': 'S1470886930.703749,VS0,VE130',
+21 silly get     vary: 'Accept-Encoding' } ]
+22 verbose get saving dustjs-linkedin to /Users/dihwang/.npm/registry.npmjs.org/dustjs-linkedin/.cache.json
+23 verbose makeDirectory /Users/dihwang/.npm creation not in flight; initializing
+24 silly makeDirectory /Users/dihwang/.npm uid: 110260272 gid: 110260272
+25 silly install normalizeTree
+26 silly loadCurrentTree Finishing
+27 silly loadIdealTree Starting
+28 silly install loadIdealTree
+29 silly cloneCurrentTree Starting
+30 silly install cloneCurrentTreeToIdealTree
+31 silly cloneCurrentTree Finishing
+32 silly loadShrinkwrap Starting
+33 silly install loadShrinkwrap
+34 silly loadShrinkwrap Finishing
+35 silly loadAllDepsIntoIdealTree Starting
+36 silly install loadAllDepsIntoIdealTree
+37 silly rollbackFailedOptional Starting
+38 silly rollbackFailedOptional Finishing
+39 silly runTopLevelLifecycles Starting
+40 silly runTopLevelLifecycles Finishing
+41 silly install printInstalled
+42 verbose stack Error: Refusing to install dustjs-linkedin as a dependency of itself
+42 verbose stack     at checkSelf (/usr/local/lib/node_modules/npm/lib/install/validate-args.js:40:14)
+42 verbose stack     at Array.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+42 verbose stack     at LOOP (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
+42 verbose stack     at chain (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:20:5)
+42 verbose stack     at /usr/local/lib/node_modules/npm/lib/install/validate-args.js:15:5
+42 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:52:35
+42 verbose stack     at Array.forEach (native)
+42 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:52:11
+42 verbose stack     at Array.forEach (native)
+42 verbose stack     at asyncMap (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:51:8)
+43 verbose cwd /Users/dihwang/workspace-sts-3.7.2.RELEASE/nodejs/dustjs/dustjs
+44 error Darwin 15.6.0
+45 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "--save" "--production" "dustjs-linkedin"
+46 error node v5.2.0
+47 error npm  v3.3.12
+48 error code ENOSELF
+49 error Refusing to install dustjs-linkedin as a dependency of itself
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
